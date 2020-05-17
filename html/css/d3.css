@@ -1,0 +1,52 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  width: 99%; 
+/*
+  width: 960px;
+  height: 500px;
+*/
+  position: relative;
+  #background-color: #333;
+  margin: 0 auto;
+}
+
+.graph {
+  border-radius: 5px 5px 0 0;
+  padding-top: 50px;
+  /*margin: 25px auto 0;*/
+  height: 100%;
+  background-color: #fff;
+  svg{width: 350px !important;}
+  svg{height: 240px !important;}
+  .slice{stroke: white; stroke-width: 5px;}
+  .slice:hover{opacity: .5;}
+  .labels text{background-color: #333; width: 150px; font-size:9}
+}
+
+.wheel {
+    width: 350px;
+    height: 225px;
+}
+
+/*
+svg{
+    width: 350px;
+    height: 225px;
+}
+*/
+
+path.slice{
+    stroke-width:5px;
+}
+
+polyline{
+    stroke: #333;
+    stroke-width: 1px;
+    fill: none;
+}
+
+.desc {
+    align: center;
+}

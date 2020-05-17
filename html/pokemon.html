@@ -1,0 +1,95 @@
+<html lang="en" class="notranslate" translate="no">
+<head>
+    <meta name="google" content="notranslate" />
+
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/pokemon.js"></script>
+    <link href='css/d3.css' rel='stylesheet'>
+    <link href='css/simple.css' rel='stylesheet'>
+</head>
+
+<h1>Pokemon Go Experience Visualizer</h1>
+<div>&nbsp;</div>
+<button onClick="setRyan();">dextius</button>
+<div>&nbsp;</div>
+
+<div class="row">
+    <div class="column">Total XP</div>
+    <div class="column"><input type="text" size="15" id="totalXP"></div>
+</div>
+
+<div class="row">
+    <div class="column">Pokemon Caught</div>
+    <div class="column"><input type="text" size="15" id="pokemonCaught"></div>
+</div>
+
+<div class="row">
+    <div class="column">Pokestops Visited</div>
+    <div class="column"><input type="text" size="15" id="pokestopsVisited"></div>
+</div>
+
+<div class="row">
+    <div class="column">Start Date (MM/DD/YYYY)</div>
+    <div class="column"><input type="text" size="15" id="startDate"></div>
+</div>
+
+<h2>Medals</h2>
+
+<div class="row">
+    <div class="column">Scientist</div>
+    <div class="column"><input type="text" size="15" id="scientist"> &nbsp; <input type="checkbox" id="scientistCheck"> Assume 90% Lucky Egg </div>
+</div>
+
+<div class="row">
+    <div class="column">Breeder</div>
+    <div class="column"><input type="text" size="15" id="breeder"> &nbsp; <input type="checkbox" id="breederCheck"> Assume 25% Lucky Egg </div>
+</div>
+
+<div class="row">
+    <div class="column">Battle Girl</div>
+    <div class="column"><input type="text" size="15" id="battleGirl"></div>
+</div>
+
+<div class="row">
+    <div class="column">Idol (best friends)</div>
+    <div class="column"> <input type="text" size="15" id="idol"> &nbsp; <input type="checkbox" id="idolCheck"> Assume 50% Lucky egg </div>
+</div>
+
+<div class="row">
+    <div class="column">Champion</div>
+    <div class="column"><input type="text" size="15" id="champion"></div>
+</div>
+
+<div class="row">
+    <div class="column">Battle Legend</div>
+    <div class="column"><input type="text" size="15" id="battleLegend"> &nbsp; <input type="checkbox" id="battleLegendCheck"> Assume 50% Lucky Egg </div>
+</div>
+
+<div>&nbsp;</div>
+
+
+<div id="dataTable" style="display:none">
+    <table style="border:1px solid black">
+        <tr>
+            <td style="border:1px solid black">Days Playing</td>
+            <td style="border:1px solid black" id="daysPlaying"></td>
+        </tr>
+        <tr>
+            <td style="border:1px solid black">Experience Per Day</td>
+            <td style="border:1px solid black" id="xpPerDay"></td>
+        </tr>
+        <tr>
+            <td style="border:1px solid black">Average raids Per Day</td>
+            <td style="border:1px solid black" id="raidsPerDay"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><hr/></td</td>
+        </tr>
+    </table>
+</div>
+
+<div style="width:100%" id="myGraph"/>
+
+</html>
