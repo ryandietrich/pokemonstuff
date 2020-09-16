@@ -179,7 +179,8 @@ $(document).ready(function(){
     buildGraph("myGraph", true);
 });
 
-function setRyan() {
+// May 17
+function setRyan17May() {
     $("#totalXP").val(72726389);
     $("#pokemonCaught").val(85874);
     $("#pokestopsVisited").val(51401);
@@ -190,6 +191,27 @@ function setRyan() {
     $("#idol").val(76);
     $("#champion").val(277);
     $("#battleLegend").val(494);
+
+    $("#battleLegendCheck").prop("checked", true);
+    $("#idolCheck").prop("checked", true);
+    $("#scientistCheck").prop("checked", true);
+
+    validateDate();
+
+    recalculate();
+}
+
+function setRyan16September() {
+    $("#totalXP").val(90747266);
+    $("#pokemonCaught").val(115844);
+    $("#pokestopsVisited").val(60840);
+    $("#startDate").val("07/10/2016");
+    $("#scientist").val(13536);
+    $("#breeder").val(2705);
+    $("#battleGirl").val(8852);
+    $("#idol").val(89);
+    $("#champion").val(323);
+    $("#battleLegend").val(684);
 
     $("#battleLegendCheck").prop("checked", true);
     $("#idolCheck").prop("checked", true);
